@@ -110,42 +110,37 @@
                 </section>
 
                 <div class="quadro-geral3">
-                    <div class="quadro-medidaori">
-                        <label class="insira-medida">Insira a medida:</label>
-                        <input type="number" placeholder="0" min="-273" class="input-medida" id="input-medida">
+                    <div class="quadro-massaori">
+                        <label class="insira-massa">Insira a massa:</label>
+                        <input type="number" placeholder="0" min="-273" class="input-massa" id="input-massa">
 
-                        <select class="medida-origem" id="medida-origem">
-                            <option value="Quilômetro">Km</option>
-                            <option value="Hectômetro">Hm</option>
-                            <option value="Decâmetro">dam</option>
-                            <option value="Metro">m</option>
-                            <option value="Decímetro">dm</option>
-                            <option value="Centímetro">cm</option>
-                            <option value="Milímetro">mm</option>
+                        <select class="massa-origem" id="massa-origem">
+                            <option value="Tonelada">t</option>
+                            <option value="Quilograma">Kg</option>
+                            <option value="Grama">g</option>
+                            <option value="Miligrama">mg</option>
                         </select>
 
-                        <label class="converte-em-medida">Converter em:</label>
+                        <label class="converte-em-massa">Converter em:</label>
 
-                        <select class="medida-destino" id="medida-destino">
-                            <option value="Quilômetro">Quilômetro(Km)</option>
-                            <option value="Hectômetro">Hectômetro(Hm)</option>
-                            <option value="Decâmetro">Decâmetro(dam)</option>
-                            <option value="Metro">Metro(m)</option>
-                            <option value="Decímetro">Decímetro(dm)</option>
-                            <option value="Centímetro">Centímetro(cm)</option>
-                            <option value="Milímetro">Milímetro(mm)</option>
+                        <select class="massa-destino" id="massa-destino">
+                            <option value="Tonelada">Tonelada(t)</option>
+                            <option value="Quilograma">Quilograma(Kg)</option>
+                            <option value="Grama">Grama(g)</option>
+                            <option value="Miligrama">Miligrama(mg)</option>
                         </select>
 
-                        <button class="botaoconverter1" id="botaoconverter1">Converter</button>
+                        <button class="botaoconverter2" id="botaoconverter2">Converter</button>
                     </div>
 
-                    <div class="quadro-resultadomedida">
-                        <p id="resultado-medida"></p>
-                        <span id="simbolo-resultado-medida">m</span>
+                    <div class="quadro-resultadomassa">
+                        <p id="resultado-massa"></p>
+                        <span id="simbolo-resultado-massa">Kg</span>
                     </div>
                 </div>
 
                 <section id="historico">
+                    <div class="linha-sepa4"></div>
                     <h2>Historico</h2>
                 </section>
             </main>
