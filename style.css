@@ -48,6 +48,7 @@ nav ul li a:hover{
 
 .quadro-geral1 {
     display: flex;
+    justify-content: flex-start;
     margin-left: 120px;
     margin-top: 50px;
     transform: scale(1.2);
@@ -56,7 +57,8 @@ nav ul li a:hover{
 
 .quadro-temperatura {
     background-color: #575757;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 200px;
     padding: 25px;
     border: 2px solid rgb(255, 222, 33);
@@ -110,7 +112,8 @@ nav ul li a:hover{
 
 .quadro-resultado {
     background-color: rgb(255, 222, 33);
-    width: 203px;
+    width: 100%;
+    max-width: 203px;
     height: 204px;
     padding: 25px;
     display: flex;
@@ -142,6 +145,7 @@ nav ul li a:hover{
 
 .quadro-geral2 {
     display: flex;
+    justify-content: flex-start;
     margin-left: 120px;
     margin-top: 50px;
     transform: scale(1.2);
@@ -150,7 +154,8 @@ nav ul li a:hover{
 
 .quadro-medidaori {
     background-color: #575757;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 200px;
     padding: 25px;
     border: 2px solid rgb(255, 222, 33);
@@ -204,7 +209,8 @@ nav ul li a:hover{
 
 .quadro-resultadomedida {
     background-color: rgb(255, 222, 33);
-    width: 203px;
+    width: 100%;
+    max-width: 203px;
     height: 204px;
     padding: 25px;
     display: flex;
@@ -237,6 +243,7 @@ nav ul li a:hover{
 
 .quadro-geral3 {
     display: flex;
+    justify-content: flex-start;
     margin-left: 120px;
     margin-top: 50px;
     transform: scale(1.2);
@@ -245,7 +252,8 @@ nav ul li a:hover{
 
 .quadro-massaori {
     background-color: #575757;
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 200px;
     padding: 25px;
     border: 2px solid rgb(255, 222, 33);
@@ -299,7 +307,8 @@ nav ul li a:hover{
 
 .quadro-resultadomassa {
     background-color: rgb(255, 222, 33);
-    width: 203px;
+    width: 100%;
+    max-width: 203px;
     height: 204px;
     padding: 25px;
     display: flex;
