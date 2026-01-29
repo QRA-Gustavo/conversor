@@ -103,12 +103,61 @@ function convertermedida () {
             break;
         case "Centímetro":
             medidaconvetida = medidametro / 0.01;
-            simboloResultado.textContent = "cm"
+            simbolomedida.textContent = "cm"
             break;
         case "Milímetro":
-            medidaconvetida = medidametro / 0.001
+            medidaconvetida = medidametro / 0.001;
             simbolomedida.textContent = "mm"
+            break;
     }
     resulmedida.textContent = medidaconvetida.toFixed(1);
 }
 convetmedida.addEventListener("click", convertermedida);
+
+const inputmassa = document.getElementById("input-massa")
+const selecmassa = document.getElementById("massa-origem")
+const selecmassadis = document.getElementById("massa-destino")
+const resulmassa = document.getElementById("resultado-massa")
+const simbolomassa = document.getElementById("simbolo-resultado-massa")
+const convetmassa = document.getElementById("botaoconverter2")
+
+function convertemassa() {
+    let massa = parseFloat(inputmassa.value)
+
+    let massakilo;
+    switch(selecmassa.value) {
+        case "Tonelada":
+            massakilo = massa * 1000;
+            break;
+        case "Quilograma":
+            massakilo = massa 
+            break;
+        case "Grama":
+            massakilo = massa * 0.001
+            break;
+        case "Miligrama":
+            massakilo = massa * 0.000001;
+            break;
+    }
+    let massaconvertida;
+    switch(selecmassadis.value) {
+        case "Tonelada":
+            massaconvertida = massakilo / 1000;
+            simbolomassa.textContent = "t";
+            break;
+        case "Quilograma":
+            massaconvertida = massakilo;
+            simbolomassa.textContent = "Kg";
+            break;
+        case "Grama":
+            massaconvertida = massakilo / 0.001;
+            simbolomassa.textContent = "g";
+            break;
+        case "Miligrama":
+            massaconvertida = massakilo / 0.000001;
+            simbolomassa.textContent = "mg";
+            break;
+    }
+    resulmassa.textContent = massaconvertida.toFixed(2);
+}
+convetmassa.addEventListener("click", convertemassa);
