@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Conversor Universal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1 class="titulo">Conversor Universal</h1>
+                <ul>    
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#temperatura">Temperatura</a></li>
+                    <li><a href="#medidas">medidas</a></li>
+                    <li><a href="#moedas">Moedas</a></li>
+                    <li><a href="#historico">Historico</a></li>
+                </ul>
+            </nav>
+        </header>
+
+            <main>
+                <section id="inicio">
+                    <h2>Início</h2>
+                    <p class="texto-intro">
+                        Este site foi desenvolvido para realizar conversões de temperatura, medidas e moedas de forma simples e rápida.
+                    </p>
+                    <div class="linha-sepa1"></div>
+                </section>
+
+
+
+                <section id="temperatura">
+                    <h2>Conversor de Temperatura</h2>
+                </section>
+
+                <div class="quadro-geral1">
+                    <div class="quadro-temperatura">
+                        <label class="insira-temperatura">Insira a temperatura:</label>
+                        <input type="number" placeholder="0" min="-273" class="input-temperatura" id="input-temperatura">
+
+                        <select class="temperatura-origem" id="temperatura-origem">
+                            <option value="celsius">°C</option>
+                            <option value="fahrenheit">°F</option>
+                            <option value="kelvin">K</option>
+                        </select>
+
+                        <label class="converte-em">Converter em:</label>
+
+                        <select class="temperatura-destino" id="temperatura-destino">
+                            <option value="celsius">Celsius(°C)</option>
+                            <option value="fahrenheit">fahrenheit(°F)</option>
+                            <option value="kelvin">Kelvin(K)</option>
+                        </select>
+
+                        <button class="botaoconverter" id="botaoconverter">Converter</button>
+                    </div>
+
+                    <div class="quadro-resultado">
+                        <p id="resultado"></p>
+                        <span id="simbolo-resultado">°C</span>
+                    </div>
+                </div>
+
+                <section id="medidas">
+                    <div class="linha-sepa2"></div>
+                    <h2>Conversor de medidas</h2>
+                </section>
+
+
+                <div class="quadro-geral2">
+                    <div class="quadro-medidaori">
+                        <label class="insira-medida">Insira a medida:</label>
+                        <input type="number" placeholder="0" min="-273" class="input-medida" id="input-medida">
+
+                        <select class="medida-origem" id="medida-origem">
+                            <option value="Quilômetro">Km</option>
+                            <option value="Hectômetro">Hm</option>
+                            <option value="Decâmetro">dam</option>
+                            <option value="Metro">m</option>
+                            <option value="Decímetro">dm</option>
+                            <option value="Centímetro">cm</option>
+                            <option value="Milímetro">mm</option>
+                        </select>
+
+                        <label class="converte-em-medida">Converter em:</label>
+
+                        <select class="medida-destino" id="medida-destino">
+                            <option value="Quilômetro">Quilômetro(Km)</option>
+                            <option value="Hectômetro">Hectômetro(Hm)</option>
+                            <option value="Decâmetro">Decâmetro(dam)</option>
+                            <option value="Metro">Metro(m)</option>
+                            <option value="Decímetro">Decímetro(dm)</option>
+                            <option value="Centímetro">Centímetro(cm)</option>
+                            <option value="Milímetro">Milímetro(mm)</option>
+                        </select>
+
+                        <button class="botaoconverter1" id="botaoconverter1">Converter</button>
+                    </div>
+
+                    <div class="quadro-resultadomedida">
+                        <p id="resultado-medida"></p>
+                        <span id="simbolo-resultado-medida">m</span>
+                    </div>
+                </div>
+
+
+                <section id="massas">
+                    <div class="linha-sepa3"></div>
+                    <h2>Conversor de Massas</h2>
+                </section>
+
+                <div class="quadro-geral3">
+                    <div class="quadro-medidaori">
+                        <label class="insira-medida">Insira a medida:</label>
+                        <input type="number" placeholder="0" min="-273" class="input-medida" id="input-medida">
+
+                        <select class="medida-origem" id="medida-origem">
+                            <option value="Quilômetro">Km</option>
+                            <option value="Hectômetro">Hm</option>
+                            <option value="Decâmetro">dam</option>
+                            <option value="Metro">m</option>
+                            <option value="Decímetro">dm</option>
+                            <option value="Centímetro">cm</option>
+                            <option value="Milímetro">mm</option>
+                        </select>
+
+                        <label class="converte-em-medida">Converter em:</label>
+
+                        <select class="medida-destino" id="medida-destino">
+                            <option value="Quilômetro">Quilômetro(Km)</option>
+                            <option value="Hectômetro">Hectômetro(Hm)</option>
+                            <option value="Decâmetro">Decâmetro(dam)</option>
+                            <option value="Metro">Metro(m)</option>
+                            <option value="Decímetro">Decímetro(dm)</option>
+                            <option value="Centímetro">Centímetro(cm)</option>
+                            <option value="Milímetro">Milímetro(mm)</option>
+                        </select>
+
+                        <button class="botaoconverter1" id="botaoconverter1">Converter</button>
+                    </div>
+
+                    <div class="quadro-resultadomedida">
+                        <p id="resultado-medida"></p>
+                        <span id="simbolo-resultado-medida">m</span>
+                    </div>
+                </div>
+
+                <section id="historico">
+                    <h2>Historico</h2>
+                </section>
+            </main>
+        <script src="scrip.js"></script>
+    </body>
+</html>
