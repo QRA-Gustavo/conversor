@@ -57,7 +57,7 @@ nav ul li a:hover{
     background-color: #292929;
     width: 100%;
     max-width: 250px;
-    height: 300px;
+    height: 350px;
     padding: 25px;
     margin-left: 75px;
     border: 2px solid rgb(255, 222, 33);
@@ -465,4 +465,5 @@ nav ul li a:hover{
         font-size: 13px; /* texto menor no celular */
     }
 }
+
 
