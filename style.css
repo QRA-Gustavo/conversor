@@ -1,5 +1,5 @@
 body {
-    background-color: #313131;
+    background-color: #1a1a1a;
     color: white;
 }
 
@@ -46,62 +46,98 @@ nav ul li a:hover{
     margin: 30px auto;
 }
 
-.quadro-geral1 {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 120px;
-    margin-top: 50px;
-    transform: scale(1.2);
-    margin-bottom: 60px;
-}
-
 .quadro-temperatura {
-    background-color: #575757;
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
+    background-color: #292929;
+    width: 150%;
+    max-width: 250px;
+    height: 300px;
     padding: 25px;
+    margin-left: 75px;
     border: 2px solid rgb(255, 222, 33);
+    border-radius: 8px;
 }
 
 .insira-temperatura {
+    font-size: 30px;
     display: block;
     margin-bottom: 5px;
 }
-
-.converte-em{
-    display: block;
-    margin-top: 20px;
-}
-
 .input-temperatura {
-    width: 100px;
+    width:225px;
     border: none;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: textfield;
-}
 
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 35px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 .input-temperatura::-webkit-inner-spin-button,
 .input-temperatura::-webkit-outer-spin-button {
     display: none;
 }
 
-.temperatura-destino {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 15px;
+.label-temperatura {
+    font-size: 25px;
+    display: flex;
+    gap: 75px;
+    margin-top: 25px;
 }
+
+.select-temperatura {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.temperatura-origem {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 40px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.temperatura-destino {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 40px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+        border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 
 .botaoconverter {
     display: block;
     background-color: rgb(255, 222, 33);
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 13px 30px;
     font-size: 15px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     border: none;
+    border-radius: 8px;
 
 }
 
@@ -110,26 +146,19 @@ nav ul li a:hover{
     background-color:rgb(129, 129, 129);
 }
 
-.quadro-resultado {
-    background-color: rgb(255, 222, 33);
-    width: 100%;
-    max-width: 203px;
-    height: 204px;
-    padding: 25px;
+.resultado-temperatura {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 5px;
-    font-size: 24px;
+
 }
 
 #resultado {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0;
-    font-weight: bold;
 }
 #simbolo-resultado {
-    font-weight: bold;
     position: relative;
     top: -10px;
 }
@@ -143,62 +172,100 @@ nav ul li a:hover{
 }
 
 
-.quadro-geral2 {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 120px;
-    margin-top: 50px;
-    transform: scale(1.2);
-    margin-bottom: 60px;
-}
 
-.quadro-medidaori {
-    background-color: #575757;
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
+
+.quadro-medida {
+    background-color: #292929;
+    width: 150%;
+    max-width: 250px;
+    height: 300px;
     padding: 25px;
+    margin-left: 75px;
     border: 2px solid rgb(255, 222, 33);
+    border-radius: 8px;
 }
 
 .insira-medida {
+    font-size: 30px;
     display: block;
     margin-bottom: 5px;
 }
-
-.converte-em-medida{
-    display: block;
-    margin-top: 20px;
-}
-
 .input-medida {
-    width: 100px;
+    width:225px;
     border: none;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: textfield;
-}
 
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 35px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 .input-medida::-webkit-inner-spin-button,
 .input-medida::-webkit-outer-spin-button {
     display: none;
 }
 
-.medida-destino {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 15px;
+.label-medida {
+    font-size: 25px;
+    display: flex;
+    gap: 100px;
+    margin-top: 25px;
 }
+
+.select-medida {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.medida-origem {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 40px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.medida-destino {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 40px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+        border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 
 .botaoconverter1 {
     display: block;
     background-color: rgb(255, 222, 33);
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 13px 30px;
     font-size: 15px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     border: none;
+    border-radius: 8px;
 
 }
 
@@ -207,26 +274,18 @@ nav ul li a:hover{
     background-color:rgb(129, 129, 129);
 }
 
-.quadro-resultadomedida {
-    background-color: rgb(255, 222, 33);
-    width: 100%;
-    max-width: 203px;
-    height: 204px;
-    padding: 25px;
+.divesultado-medida {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 5px;
-    font-size: 24px;
 }
 
 #resultado-medida {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0;
-    font-weight: bold;
 }
 #simbolo-resultado-medida {
-    font-weight: bold;
     position: relative;
     top: -10px;
 }
@@ -241,62 +300,98 @@ nav ul li a:hover{
 
 
 
-.quadro-geral3 {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 120px;
-    margin-top: 50px;
-    transform: scale(1.2);
-    margin-bottom: 60px;
-}
-
-.quadro-massaori {
-    background-color: #575757;
-    width: 100%;
-    max-width: 200px;
-    height: 200px;
+.quadro-massa {
+    background-color: #292929;
+    width: 150%;
+    max-width: 250px;
+    height: 300px;
     padding: 25px;
+    margin-left: 75px;
     border: 2px solid rgb(255, 222, 33);
+    border-radius: 8px;
 }
 
 .insira-massa {
+    font-size: 30px;
     display: block;
     margin-bottom: 5px;
 }
-
-.converte-em-massa{
-    display: block;
-    margin-top: 20px;
-}
-
 .input-massa {
-    width: 100px;
+    width:225px;
     border: none;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: textfield;
-}
 
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 35px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 .input-massa::-webkit-inner-spin-button,
 .input-massa::-webkit-outer-spin-button {
     display: none;
 }
 
-.massa-destino {
-    display: block;
-    margin-top: 5px;
-    margin-bottom: 15px;
+.label-massa {
+    font-size: 25px;
+    display: flex;
+    gap: 100px;
+    margin-top: 25px;
 }
+
+.select-massa {
+    font-size: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.massa-origem {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 40px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.massa-destino {
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid rgb(255, 222, 33);
+    height: 40px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+        border-radius: 5px;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 
 .botaoconverter2 {
     display: block;
     background-color: rgb(255, 222, 33);
     color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 13px 30px;
     font-size: 15px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 40px;
     border: none;
+    border-radius: 8px;
 
 }
 
@@ -305,26 +400,18 @@ nav ul li a:hover{
     background-color:rgb(129, 129, 129);
 }
 
-.quadro-resultadomassa {
-    background-color: rgb(255, 222, 33);
-    width: 100%;
-    max-width: 203px;
-    height: 204px;
-    padding: 25px;
+.divresultado-massa {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    gap: 5px;
-    font-size: 24px;
 }
 
 #resultado-massa {
-    font-size: 35px;
+    font-size: 25px;
     margin: 0;
-    font-weight: bold;
 }
 #simbolo-resultado-massa {
-    font-weight: bold;
     position: relative;
     top: -10px;
 }
@@ -335,4 +422,11 @@ nav ul li a:hover{
     background-color: rgb(255, 222, 33);
     margin: 50px auto;
     margin-bottom: 10px;
+}
+
+.rodape {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto;
 }
