@@ -12,8 +12,7 @@
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#temperatura">Temperatura</a></li>
                     <li><a href="#medidas">medidas</a></li>
-                    <li><a href="#moedas">Moedas</a></li>
-                    <li><a href="#historico">Historico</a></li>
+                    <li><a href="#massas">massa</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,33 +32,36 @@
                     <h2>Conversor de Temperatura</h2>
                 </section>
 
-                <div class="quadro-geral1">
-                    <div class="quadro-temperatura">
-                        <label class="insira-temperatura">Insira a temperatura:</label>
-                        <input type="number" placeholder="0" min="-273" class="input-temperatura" id="input-temperatura">
+                <div class="quadro-temperatura">
+                    <label class="insira-temperatura">Insira a temperatura:</label>
+                    <input type="number" placeholder="0" min="-273" class="input-temperatura" id="input-temperatura">
 
+                    <div class="label-temperatura">
+                        <label class="de-temperatura">De:</label>
+                        <label class="para-temperatura">Para:</label>
+                    </div>
+                    <div class="select-temperatura">
                         <select class="temperatura-origem" id="temperatura-origem">
-                            <option value="celsius">°C</option>
-                            <option value="fahrenheit">°F</option>
-                            <option value="kelvin">K</option>
+                            <option value="celsius">Celsius(°C)</option>
+                            <option value="fahrenheit">fahrenheit(°F)</option>
+                            <option value="kelvin">Kelvin(K)</option>
                         </select>
-
-                        <label class="converte-em">Converter em:</label>
 
                         <select class="temperatura-destino" id="temperatura-destino">
                             <option value="celsius">Celsius(°C)</option>
                             <option value="fahrenheit">fahrenheit(°F)</option>
                             <option value="kelvin">Kelvin(K)</option>
                         </select>
-
-                        <button class="botaoconverter" id="botaoconverter">Converter</button>
                     </div>
 
-                    <div class="quadro-resultado">
+                    <button class="botaoconverter" id="botaoconverter">Converter</button>
+                    <div class="resultado-temperatura">
                         <p id="resultado"></p>
-                        <span id="simbolo-resultado">°C</span>
+                        <span id="simbolo-resultado"></span>
                     </div>
                 </div>
+
+
 
                 <section id="medidas">
                     <div class="linha-sepa2"></div>
@@ -67,23 +69,25 @@
                 </section>
 
 
-                <div class="quadro-geral2">
-                    <div class="quadro-medidaori">
-                        <label class="insira-medida">Insira a medida:</label>
-                        <input type="number" placeholder="0" min="-273" class="input-medida" id="input-medida">
+                <div class="quadro-medida">
+                    <label class="insira-medida">Insira a medida:</label>
+                    <input type="number" placeholder="0" min="-273" class="input-medida" id="input-medida">
 
+                    <div class="label-medida">
+                        <label class="de-medida">De:</label>
+                        <label class="para-medida">Para:</label>
+                    </div>
+
+                    <div class="select-medida">
                         <select class="medida-origem" id="medida-origem">
-                            <option value="Quilômetro">Km</option>
-                            <option value="Hectômetro">Hm</option>
-                            <option value="Decâmetro">dam</option>
-                            <option value="Metro">m</option>
-                            <option value="Decímetro">dm</option>
-                            <option value="Centímetro">cm</option>
-                            <option value="Milímetro">mm</option>
+                            <option value="Quilômetro">Quilômetro(Km)</option>
+                            <option value="Hectômetro">Hectômetro(Hm)</option>
+                            <option value="Decâmetro">Decâmetro(dam)</option>
+                            <option value="Metro">Metro(m)</option>
+                            <option value="Decímetro">Decímetro(dm)</option>
+                            <option value="Centímetro">Centímetro(cm)</option>
+                            <option value="Milímetro">Milímetro(mm)</option>
                         </select>
-
-                        <label class="converte-em-medida">Converter em:</label>
-
                         <select class="medida-destino" id="medida-destino">
                             <option value="Quilômetro">Quilômetro(Km)</option>
                             <option value="Hectômetro">Hectômetro(Hm)</option>
@@ -93,15 +97,16 @@
                             <option value="Centímetro">Centímetro(cm)</option>
                             <option value="Milímetro">Milímetro(mm)</option>
                         </select>
-
-                        <button class="botaoconverter1" id="botaoconverter1">Converter</button>
                     </div>
 
-                    <div class="quadro-resultadomedida">
+                    <button class="botaoconverter1" id="botaoconverter1">Converter</button>
+
+                    <div class="divesultado-medida">
                         <p id="resultado-medida"></p>
-                        <span id="simbolo-resultado-medida">m</span>
+                        <span id="simbolo-resultado-medida"></span>
                     </div>
                 </div>
+
 
 
                 <section id="massas">
@@ -109,42 +114,47 @@
                     <h2>Conversor de Massas</h2>
                 </section>
 
-                <div class="quadro-geral3">
-                    <div class="quadro-massaori">
-                        <label class="insira-massa">Insira a massa:</label>
-                        <input type="number" placeholder="0" min="-273" class="input-massa" id="input-massa">
 
+                <div class="quadro-massa">
+                    <label class="insira-massa">Insira a massa:</label>
+                    <input type="number" placeholder="0" min="-273" class="input-massa" id="input-massa">
+
+                    <div class="label-massa">
+                        <label class="de-massa">De:</label>
+                        <label class="para-massa">Para:</label>
+                    </div>
+
+                    <div class="select-massa">
                         <select class="massa-origem" id="massa-origem">
                             <option value="Tonelada">t</option>
                             <option value="Quilograma">Kg</option>
                             <option value="Grama">g</option>
                             <option value="Miligrama">mg</option>
                         </select>
-
-                        <label class="converte-em-massa">Converter em:</label>
-
                         <select class="massa-destino" id="massa-destino">
                             <option value="Tonelada">Tonelada(t)</option>
                             <option value="Quilograma">Quilograma(Kg)</option>
                             <option value="Grama">Grama(g)</option>
                             <option value="Miligrama">Miligrama(mg)</option>
                         </select>
-
-                        <button class="botaoconverter2" id="botaoconverter2">Converter</button>
                     </div>
 
-                    <div class="quadro-resultadomassa">
+                    <button class="botaoconverter2" id="botaoconverter2">Converter</button>
+                    <div class="divresultado-massa">
                         <p id="resultado-massa"></p>
-                        <span id="simbolo-resultado-massa">Kg</span>
+                        <span id="simbolo-resultado-massa"></span>
                     </div>
                 </div>
+
 
                 <section id="historico">
                     <div class="linha-sepa4"></div>
                     <h2></h2>
                 </section>
             </main>
+            <footer class="rodape">
+                <img src="rodapeconversor.png" alt="Rodapé do Conversor Universal"
+            </footer>
         <script src="scrip.js"></script>
     </body>
 </html>
-
