@@ -457,7 +457,7 @@ nav ul li a:hover{
 /* ajuste fino para celulares */
 @media (max-width: 768px) {
     .rodape-img {
-        width: 90%; /* ocupa quase toda a largura da tela no celular */
+        width: 100%; /* ocupa quase toda a largura da tela no celular */
         height: auto;
     }
 
@@ -465,5 +465,6 @@ nav ul li a:hover{
         font-size: 13px; /* texto menor no celular */
     }
 }
+
 
 
