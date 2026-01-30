@@ -14,7 +14,7 @@ nav ul {
     }
 nav ul li {
     list-style-type: none;
-    margin-left: 5px;
+    margin-left: 10px;
     font-size: 25px;
     }
 
@@ -30,7 +30,9 @@ nav ul li a {
 nav ul li a:hover{
     background-color: rgb(129, 129, 129);
     }
-
+#inicio {
+    margin-left: 10px;
+}
 .titulo {
     text-align: center;
     font-size: 50px;
@@ -45,6 +47,10 @@ nav ul li a:hover{
     height: 1px;
     background-color: rgb(255, 222, 33);
     margin: 30px auto;
+}
+
+#temperatura {
+    margin-left: 10px;
 }
 
 .quadro-temperatura {
@@ -174,6 +180,9 @@ nav ul li a:hover{
 
 
 
+#medidas {
+    margin-left: 10px;
+}
 
 .quadro-medida {
     background-color: #292929;
@@ -300,7 +309,9 @@ nav ul li a:hover{
 }
 
 
-
+#massas {
+    margin-left: 10px;
+}
 .quadro-massa {
     background-color: #292929;
     width: 100%;
