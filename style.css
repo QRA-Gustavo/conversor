@@ -65,7 +65,7 @@ nav ul li a:hover{
 }
 
 .insira-temperatura {
-    font-size: 30px;
+    font-size: 25px;
     display: block;
     margin-bottom: 5px;
 }
@@ -465,3 +465,4 @@ nav ul li a:hover{
         font-size: 13px; /* texto menor no celular */
     }
 }
+
