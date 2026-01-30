@@ -428,18 +428,40 @@ nav ul li a:hover{
     top: -10px;
 }
 
-.linha-sepa4 {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(255, 222, 33);
-    margin: 50px auto;
-    margin-bottom: 10px;
-}
 
 @media (max-width: 768px) {
     .input-temperatura,
     .input-medida,
     .input-massa {
         width: 90%; /* ocupa quase tudo */
+    }
+}
+
+
+.rodape {
+    width: 100%;
+    background-color: #111;
+    color: #fff;
+    border-top: 1px solid rgb(255, 222, 33);
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape-img {
+    max-width: 100%; /* nunca ultrapassa a largura do rodapé */
+    height: auto;    /* mantém a proporção original */
+    display: block;
+    margin: 0 auto 10px auto; /* centraliza a imagem */
+}
+
+/* ajuste fino para celulares */
+@media (max-width: 768px) {
+    .rodape-img {
+        width: 90%; /* ocupa quase toda a largura da tela no celular */
+        height: auto;
+    }
+
+    .rodape p {
+        font-size: 13px; /* texto menor no celular */
     }
 }
