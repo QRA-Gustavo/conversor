@@ -1,6 +1,7 @@
 body {
     background-color: #1a1a1a;
     color: white;
+    margin: 0;
 }
 
 nav ul {
@@ -48,7 +49,7 @@ nav ul li a:hover{
 
 .quadro-temperatura {
     background-color: #292929;
-    width: 150%;
+    width: 100%;
     max-width: 250px;
     height: 300px;
     padding: 25px;
@@ -176,7 +177,7 @@ nav ul li a:hover{
 
 .quadro-medida {
     background-color: #292929;
-    width: 150%;
+    width: 100%;
     max-width: 250px;
     height: 300px;
     padding: 25px;
@@ -302,7 +303,7 @@ nav ul li a:hover{
 
 .quadro-massa {
     background-color: #292929;
-    width: 150%;
+    width: 100%;
     max-width: 250px;
     height: 300px;
     padding: 25px;
@@ -424,9 +425,10 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 
-.rodape {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin: 0 auto;
+@media (max-width: 768px) {
+    .input-temperatura,
+    .input-medida,
+    .input-massa {
+        width: 90%; /* ocupa quase tudo */
+    }
 }
