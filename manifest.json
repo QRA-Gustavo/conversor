@@ -1,6 +1,6 @@
 {
-    "name": "Planejador Semanal",
-    "short_name": "Planner",
+    "name": "Conversor Universal",
+    "short_name": "Conversor",
     "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#000000",
